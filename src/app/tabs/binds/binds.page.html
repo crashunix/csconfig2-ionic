@@ -1,0 +1,7 @@
+<ion-content [fullscreen]="true">
+  <header class="p-4 flex justify-between items-center">
+    <h1>Binds</h1>
+    <span>Conectado</span>
+  </header>
+  <button *ngIf="connected" (click)="pushMessage()">Enviar mensagem</button>
+</ion-content>
