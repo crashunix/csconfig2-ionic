@@ -4,8 +4,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () => import('./pages/tabs/tabs.module').then(m => m.TabsPageModule)
+  },  {
+    path: 'new-bind',
+    loadChildren: () => import('./pages/new-bind/new-bind.module').then( m => m.NewBindPageModule)
   }
+
 ];
 @NgModule({
   imports: [
