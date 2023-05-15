@@ -19,10 +19,12 @@ export class BindsPage {
   cooldown: boolean = false;
 
   colors = [
-    { name: 'Verde', value: '#55c061' },
-    { name: 'Azul', value: '#0090fa' },
-    { name: 'Laranja', value: '#ff7f22' },
-    { name: 'Roxo', value: '#6a46d2' },
+    { name: 'Rosa', value: '#F8BBD0' },
+    { name: 'Verde', value: '#AED581' },
+    { name: 'Azul', value: '#B2EBF2' },
+    { name: 'Amarelo', value: '#FFF9C4' },
+    { name: 'Lilás', value: '#E1BEE7' },
+    { name: 'Pêssego', value: '#FFE0B2' },
   ];
 
   constructor(private socketService: SocketService, private fb: FormBuilder) {

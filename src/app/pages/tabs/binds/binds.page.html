@@ -1,5 +1,5 @@
 <ion-content [fullscreen]="true">
-  <app-header title="Binds" />
+  <app-header title="Say" />
   <div class="p-4">
     <div class="grid grid-cols-2 gap-2" *ngIf="messages.length">
       <button [disabled]="cooldown || !isConnected()" [ngClass]="{'opacity-70': cooldown || !isConnected()}" (click)="pushMessage(item.text)" class="aspect-video bg-blue-900 rounded-lg p-4 pt-6 flex flex-col justify-between" *ngFor="let item of messages" [ngStyle]="{'backgroundColor': item.color}">
