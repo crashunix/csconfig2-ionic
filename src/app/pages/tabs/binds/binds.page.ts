@@ -41,8 +41,8 @@ export class BindsPage {
     this.cooldown = true;
     setTimeout(() => {
       this.cooldown = false;
-    }, 1000);
-    this.socketService.sendMessage("say", message);
+    }, 500);
+    this.socketService.sendMessage(message);
   }
 
   newMessage = () => {

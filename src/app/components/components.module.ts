@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   imports: [
     CommonModule,
+    IonicModule
   ],
   declarations: [HeaderComponent],
   exports: [HeaderComponent]

@@ -52,9 +52,15 @@ export class SocketService {
     });
   }
 
-  sendMessage(key: string, message: string) {
+  sendMessage(message: string) {
     if(this.socket) {
-      this.socket.emit(key, message);
+      this.socket.emit("say", message);
+    }
+  }
+
+  command(command: string) {
+    if(this.socket) {
+      this.socket.emit("command", command);
     }
   }
 

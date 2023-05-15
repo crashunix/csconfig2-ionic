@@ -1,0 +1,15 @@
+<ion-content [fullscreen]="true">
+  <app-header title="Binds" />
+  <div class="p-4">
+    <span>Gap = {{currentCrosshairGap}}</span>
+    <div class="grid grid-cols-2 gap-2">
+      <ion-button (click)="crosshairGap(-1)">-</ion-button>
+      <ion-button (click)="crosshairGap(1)">+</ion-button>
+    </div>
+    <span class="mt-10">Size = {{currentCrosshairSize}}</span>
+    <div class="grid grid-cols-2 gap-2">
+      <ion-button (click)="crosshairSize(-1)">-</ion-button>
+      <ion-button (click)="crosshairSize(1)">+</ion-button>
+    </div>
+  </div>
+</ion-content>

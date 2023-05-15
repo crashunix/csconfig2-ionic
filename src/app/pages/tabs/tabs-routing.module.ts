@@ -12,8 +12,8 @@ const routes: Routes = [
         loadChildren: () => import('./binds/binds.module').then(m => m.BindsPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('./tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'crosshair',
+        loadChildren: () => import('./crosshair/crosshair.module').then(m => m.CrosshairPageModule)
       },
       {
         path: 'settings',
